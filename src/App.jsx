@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search, ShieldCheck, MessageSquare, Stethoscope, Menu, X, ArrowRight, Star, UserCheck, CheckCircle } from 'lucide-react';
-
+import Team from './components/team';
 // --- MAIN LANDING PAGE COMPONENT ---
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -211,7 +211,7 @@ const LandingPage = () => {
             </div>
          </div>
       </div>
-
+           <Team/>             
       {/* --- SECTION 5: FOOTER (CTA Card) --- */}
       <div className="bg-white rounded-[2.5rem] md:rounded-[3.5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-sm">
         <div className="relative z-10">
